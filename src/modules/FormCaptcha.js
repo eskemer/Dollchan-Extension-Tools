@@ -47,7 +47,7 @@ class Captcha {
 			const code = e.charCode || e.keyCode;
 			let i;
 			let chr = String.fromCharCode(code).toLowerCase();
-			if(Cfg.captchaLang === 1) {
+			/*if(Cfg.captchaLang === 1) {
 				if(code < 0x0410 || code > 0x04FF || (i = ruUa.indexOf(chr)) === -1) {
 					return;
 				}
@@ -57,7 +57,7 @@ class Captcha {
 					return;
 				}
 				chr = ruUa[i];
-			}
+			}*/
 			insertText(e.target, chr);
 			break;
 		}
