@@ -46,7 +46,7 @@ let topWinZ = 10;
 
 const defaultCfg = {
 	disabled     : 0,    // Dollchan enabled by default
-	language     : 0,    // Dollchan language [0=ru, 1=en, 2=ua]
+	language     : 1,    // Dollchan language [0=ru, 1=en, 2=ua]
 	// FILTERS
 	hideBySpell  : 1,    // hide posts by spells
 	spells       : null, // user defined spells
@@ -2571,7 +2571,7 @@ async function readCfg() {
 			delete obj.captchaLang;
 		}
 	}
-	defaultCfg.captchaLang = aib.captchaLang;
+	// defaultCfg.captchaLang = aib.captchaLang;
 	const browserLang = String(navigator.language).toLowerCase();
 	defaultCfg.language =
 		browserLang.startsWith('ru') ? 0 :
