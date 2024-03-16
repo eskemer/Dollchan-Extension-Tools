@@ -8174,7 +8174,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     sageReply: 0,
     altCaptcha: 0,
     capUpdTime: 300,
-    captchaLang: 1,
+    captchaLang: 0,
     addTextBtns: 1,
     txtBtnsLoc: 1,
     userPassw: 1,
